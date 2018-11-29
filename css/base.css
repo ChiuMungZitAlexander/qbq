@@ -1,0 +1,512 @@
+/*base css*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 62.5%;
+    width: 3654px;
+    height: 914px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset, img, object {
+    border: 0 none;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+ol, ul {
+    list-style: none
+}
+
+input, textarea, select, button {
+    font-family: "Microsoft yahei";
+    font-size: inherit;
+    font-weight: inherit;
+    color: #333;
+    *font-size: 100%;
+    vertical-align: middle;
+    box-sizing: border-box;
+    outline: none;
+}
+
+button {
+    border: none 0px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*main*/
+body {
+    width: 3654px;
+    height: 914px;
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: cover;
+    font-family: "Microsoft yahei";
+    overflow-y: hidden;
+}
+
+.main {
+    width: 3624px;
+    height: 897px;
+    background: url("../images/mainbox.png") no-repeat 0px 7px;
+
+    margin:0px 15px;
+    position: relative;
+    z-index: 3;
+}
+
+.main .title{
+    width: 1560px;
+    height: 157px;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+.main .title .t-center{
+    background: url("../images/b-title.png") no-repeat center -13px;
+    width: 1118px;
+    height: 115px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.t-center{
+    color: #3bcfff;
+    text-align: left;
+    line-height: 130px;
+    font-size: 4.0rem;
+    position: relative;
+}
+
+.t-center img{
+    float: left;
+    margin: 32px 0px 0px 360px;
+}
+
+
+
+.main .wrap{
+    width: 3463px;
+    height: 760px;
+    position: absolute;
+    top: 76px;
+    left: 79px;
+}
+
+.main .wrap  .left-side{
+    width: 1170px;
+    height: 760px;
+}
+
+.main .wrap .s-box{
+    background: url("../images/s-box.png") no-repeat;
+    width: 572px;
+    height: 361px;
+    position: relative;
+}
+
+
+.main .wrap .s-box .content{
+    width: 570px;
+    height: 349px;
+}
+
+.main .wrap .s-box .content .title{
+    width: 100%;
+    height: 55px;
+    font-size: 2.2rem;
+    color: #3bcfff;
+    line-height: 55px;
+    text-indent: 25px;
+    font-weight: bold;
+
+
+}
+.main .wrap .s-box .content .title .change{
+    background: url("../images/change.png") no-repeat;
+    width: 42px;
+    height: 32px;
+    border: none;
+    outline: none;
+    float: right;
+    margin: 13px 35px 0px 0px;
+}
+
+.main .wrap .s-box .content ul.tab{
+    width: 98.5%;
+    height: 55px;
+    margin:3px 5px;
+    line-height: 55px;
+    font-size: 2.2rem;
+    color: #23fcf4;
+    font-weight: bold;
+}
+
+.main .wrap .s-box .content ul.tab li{
+    width: 50%;
+    height: 55px;
+    text-align: center;
+    border-width: 0px 3px 3px 0px;
+    border-color: #089a95;
+    border-style: solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.main .wrap .s-box .content ul.tab li:last-child{
+    border-width: 0px 0px 3px 3px;
+}
+
+.main .wrap .s-box .content ul.tab li.active{
+    border-width: 0px;
+}
+
+.main .wrap .s-box .content .echart{
+    width: 98%;
+    height: 286px;
+    margin: 0px auto;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+}
+
+.main .wrap .s-box .content .echart .date-wrap{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.main .wrap .s-box .content .echart .date-wrap input{
+    border: none;
+    outline: none;
+    width: 145px;
+    height: 30px;
+    background: url("../images/date.png") no-repeat 123px center #fff;
+    border-radius: 3px;
+    margin:20px 10px;
+    text-indent: 5px;
+}
+
+.date-wrap span{
+    color: #01a1df;
+}
+
+.date-wrap button{
+    width: 75px;
+    height: 30px;
+    color: #fff;
+    background: #10beb8;
+    border-radius: 3px;
+}
+
+.main .wrap .s-box .content .echart img{
+    margin: 30px auto;
+}
+
+.main .wrap .center-side{
+    background: url("../images/b-box.png") no-repeat;
+    width: 1011px;
+    height: 668px;
+    float: left;
+    margin: 90px 0px 0px 56px;
+    position: relative;
+    text-align: center;
+
+}
+
+.main .wrap .center-side .echart{
+    width: 977px;
+    height: 650px;
+    margin: 15px auto;
+    border-radius: 50px;
+}
+
+.main .wrap .center-side .echart .num-wrap {
+    width: 930px;
+    height: 100px;
+    margin: 40px 33px 10px;
+}
+.main .wrap .center-side .echart .num-wrap .person-data{
+    width: 310px;
+    height: 100px;
+    float: left;
+}
+.person-data p{
+    font-size: 2.0rem;
+    color: #fff;
+    text-align: left;
+    line-height: 35px;
+}
+.person-data ul li{
+    background: url("../images/num-box.png") no-repeat;
+    width: 36px;
+    height: 70px;
+    line-height: 70px;
+    float: left;
+    margin-left: -6px;
+    color: #fff;
+    font-size: 4.4rem;
+    text-align: center;
+}
+
+.person-data ul li.dhao{
+    background: none;
+    width: 33px;
+    margin-left: -16px;
+}
+
+
+.main .wrap .center-side .line1{
+    background: url("../images/line2.png") no-repeat;
+    width: 25px;
+    height: 228px;
+    position: absolute;
+    bottom: 22px;
+    left: -10px;
+    animation: line1 4s linear;
+}
+
+@keyframes line1 {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.9;
+    }
+    90%{
+        opacity: 0.2;
+         }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main .wrap .center-side .line2{
+    background: url("../images/line1.png") no-repeat;
+    width: 25px;
+    height: 228px;
+    position: absolute;
+    bottom: 73px;
+    right: -10px;
+    animation: line2 4s linear;
+}
+
+@keyframes line2 {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.9;
+    }
+    90%{
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.mt60{
+    margin-top: 36px;
+}
+
+
+.round1{
+    background: url("../images/round1.png") no-repeat;
+    width: 49px;
+    height: 36px;
+    position: absolute;
+    top: 787px;
+    left:2272px;
+    animation: round1 4s linear infinite;
+}
+
+@keyframes round1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.round2{
+    background: url("../images/round2.png") no-repeat;
+    width: 67px;
+    height: 47px;
+    position: absolute;
+    top: 137px;
+    left: 1258px;
+    animation: round2 8s linear infinite;
+}
+
+@keyframes round2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.round3{
+    background: url("../images/round3.png") no-repeat 9px 7px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 255px;
+    left: 1262px;
+    animation: round3 5s linear infinite;
+}
+
+@keyframes round3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+.round4{
+    background: url("../images/round4.png") no-repeat 3px -2px;
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    top: 854px;
+    left: 190px;
+    animation: round4 2s linear infinite;
+}
+
+@keyframes round4 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+}
+
+
+.stone3{
+    background: url("../images/stone4.png") no-repeat;
+    width: 22px;
+    height: 20px;
+    position: absolute;
+    top: 868px;
+    left: 2084px;
+    animation: stone3 180s  linear infinite;
+}
+
+@keyframes stone3 {
+    0% {
+        left:2084px;
+    }
+    40%{
+        left:3000px;
+    }
+    100% {
+        left:2084px;
+    }
+}
+
+.stone4{
+    background: url("../images/stone.png") no-repeat;
+    width: 43px;
+    height: 41px;
+    position: absolute;
+    top: 165px;
+    left: 31px;
+    animation: stone4 80s  linear infinite;
+}
+
+@keyframes stone4 {
+    0% {
+        top:165px;
+    }
+    40%{
+        top:760px;
+    }
+    100% {
+        top:165px;
+    }
+}
+
+.stone5{
+    background: url("../images/stone5.png") no-repeat;
+    width: 52px;
+    height: 53px;
+    position: absolute;
+    top: 448px;
+    left: 3575px;
+    animation: stone5 25s   infinite;
+}
+@keyframes stone5 {
+    0% {
+        top:448px;
+    }
+    40%{
+        top:760px;
+    }
+    100% {
+        top:448px;
+        opacity: 0.9;
+    }
+}
+
+#html5_3d_animation{
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+@media screen  and (min-width: 3624px) {
+    html{
+        transform: scale(2);
+    }
+}
+
